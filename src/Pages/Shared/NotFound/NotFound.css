@@ -1,0 +1,8 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+.error-container img {
+  width: 63%;
+}
