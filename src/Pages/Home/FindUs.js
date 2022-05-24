@@ -13,7 +13,7 @@ const center = {
 
 const FindUs = () => {
   return (
-    <div class='hero min-h-[60vh] bg-accent my-14'>
+    <div class='hero min-h-[60vh]  my-14'>
       <div class='hero-content flex-col lg:flex-row'>
         <div>
           <h2 className='text-center text-5xl fw-bold text-primary'>
