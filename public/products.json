@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Antenna",
+    "img": "https://i.ibb.co/TcQDzSb/antenna.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Gree"
+  },
+  {
+    "id": 2,
+    "name": "Seat",
+    "img": "https://i.ibb.co/PYh38ty/bench-seat.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 259,
+    "supplierName": "Gree"
+  },
+  {
+    "id": 3,
+    "name": "Bonnet",
+    "img": "https://i.ibb.co/CszhDsx/bonnet.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 299,
+    "supplierName": "Gree"
+  },
+  {
+    "id": 4,
+    "name": "Brake",
+    "img": "https://i.ibb.co/pwrQz9z/brake.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 359,
+    "supplierName": "Gree"
+  },
+  {
+    "id": 5,
+    "name": "Camshaft",
+    "img": "https://i.ibb.co/TK7ms13/camshaft.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 399,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 6,
+    "name": "Dashboard",
+    "img": "https://i.ibb.co/tBnrGzh/dashboard.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 159,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 7,
+    "name": "Door Handle",
+    "img": "https://i.ibb.co/p3SMX5F/door-handle.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 8,
+    "name": "Engine",
+    "img": "https://i.ibb.co/yp9SRm6/engine.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 299,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 9,
+    "name": "Fan Belt",
+    "img": "https://i.ibb.co/zmCsxbH/fan-belt.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 259,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 10,
+    "name": "Fuel Gauge",
+    "img": "https://i.ibb.co/fCkgD76/fuel-gauge.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 299,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 11,
+    "name": "Hubcap",
+    "img": "https://i.ibb.co/QPgdG66/hubcap.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Hitachi"
+  },
+  {
+    "id": 12,
+    "name": "Jack",
+    "img": "https://i.ibb.co/7RkGkXX/jack.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 399,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 13,
+    "name": "Radio",
+    "img": "https://i.ibb.co/CwCTyb0/radio.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 14,
+    "name": "Roof",
+    "img": "https://i.ibb.co/ZTPYj35/roof.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 15,
+    "name": "Rotary Engine",
+    "img": "https://i.ibb.co/qr9Hmmm/rotary-engine.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 16,
+    "name": "Shock Absorber",
+    "img": "https://i.ibb.co/zXZvT3q/shock-absorber.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 17,
+    "name": "Speaker",
+    "img": "https://i.ibb.co/Cb4hmtD/speaker.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 18,
+    "name": "Sun Roof",
+    "img": "https://i.ibb.co/NLp1L1S/sun-roof.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 19,
+    "name": "Tachometer",
+    "img": "https://i.ibb.co/cJNc4zB/tachometer.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  },
+  {
+    "id": 20,
+    "name": "Wheel Well",
+    "img": "https://i.ibb.co/Dpm0yJt/wheel-well.png",
+    "shortDescription": "esque a laoreet vitae, fermentum a tortor.",
+    "minOrderQuantity": 12,
+    "availableQuantity": 6,
+    "price": 199,
+    "supplierName": "Samsung"
+  }
+]

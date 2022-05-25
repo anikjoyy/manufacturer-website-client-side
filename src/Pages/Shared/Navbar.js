@@ -9,6 +9,11 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
+      <li>
+        <NavLink to='/allProduct' className='rounded-lg hover:bg-secondary'>
+          Products
+        </NavLink>
+      </li>
     </>
   );
   return (
