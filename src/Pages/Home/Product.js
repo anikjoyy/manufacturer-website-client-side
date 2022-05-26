@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
-  const { id, name, img, minOrderQuantity, availableQuantity } = product;
+  const { _id, name, img, minOrderQuantity, availableQuantity } = product;
   const navigate = useNavigate();
 
   const navigateToDetails = (id) => {
@@ -25,7 +25,7 @@ const Product = ({ product }) => {
 
         <div className='card-actions '>
           <button
-            onClick={() => navigateToDetails(id)}
+            onClick={() => navigateToDetails(_id)}
             className='btn btn-primary rounded-xl hover:bg-yellow-200'
           >
             Buy Now
