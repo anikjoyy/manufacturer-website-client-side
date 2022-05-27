@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import regImage from '../../assets/images/registrationImage.png';
 import {
   useSignInWithEmailAndPassword,
@@ -24,9 +24,11 @@ const Login = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || '/';
 
-  if (user || gUser) {
-    navigate(from, { replace: true });
-  }
+  useEffect(() => {
+    if (user || gUser) {
+      navigate(from, { replace: true });
+    }
+  }, [user, gUser, from, navigate]);
 
   if (error || gError) {
     signInError = (
@@ -46,20 +48,20 @@ const Login = () => {
 
   return (
     <div
-      class='hero min-h-[65vh] bg-opacity-70'
+      className='hero min-h-[65vh] bg-opacity-70'
       style={{
         backgroundImage: `url(${regImage})`,
       }}
     >
-      <div class='hero-content flex-col lg:flex-row-reverse'>
-        <div class='text-center '>
-          <h1 class='text-5xl font-bold text-secondary'>Login Now!</h1>
+      <div className='hero-content flex-col lg:flex-row-reverse'>
+        <div className='text-center '>
+          <h1 className='text-5xl font-bold text-secondary'>Login Now!</h1>
           <p className='text-accent pt-3 font-semibold'>
             Welcome! Log in to our car Whisperer by providing your information.
           </p>
         </div>
-        <div class='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
-          <div class='card-body'>
+        <div className='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
+          <div className='card-body'>
             <h2 className='text-center text-2xl font-bold'>Login </h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className='form-control w-full max-w-xs'>
@@ -141,10 +143,10 @@ const Login = () => {
                 </Link>
               </small>
             </p>
-            <div class='divider lg:divider-vertical '>OR</div>
+            <div className='divider lg:divider-vertical '>OR</div>
             <button
               onClick={() => signInWithGoogle()}
-              class='btn btn-secondary'
+              className='btn btn-secondary'
             >
               Continue With Google
             </button>

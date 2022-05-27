@@ -13,8 +13,8 @@ const center = {
 
 const FindUs = () => {
   return (
-    <div class='hero min-h-[60vh]  my-14'>
-      <div class='hero-content flex-col lg:flex-row'>
+    <div className='hero min-h-[60vh]  my-14'>
+      <div className='hero-content flex-col lg:flex-row'>
         <div>
           <h2 className='text-center text-5xl fw-bold text-primary'>
             Our Location
@@ -24,7 +24,7 @@ const FindUs = () => {
             to us to build your dream car. If you don't want come here just
             order the tools at your home.
           </p>
-          <button class='btn btn-primary text-center'>Let's Go</button>
+          <button className='btn btn-primary text-center'>Let's Go</button>
         </div>
         <div>
           <LoadScript googleMapsApiKey='YOUR_API_KEY'>

@@ -54,21 +54,21 @@ const SignUp = () => {
 
   return (
     <div
-      class='hero min-h-[65vh] bg-opacity-70'
+      className='hero min-h-[65vh] bg-opacity-70'
       style={{
         backgroundImage: `url(${signUpImage})`,
       }}
     >
-      <div class='hero-content flex-col lg:flex-row-reverse'>
-        <div class='text-center '>
-          <h1 class='text-5xl font-bold text-secondary'>Sign Up Here!</h1>
+      <div className='hero-content flex-col lg:flex-row-reverse'>
+        <div className='text-center '>
+          <h1 className='text-5xl font-bold text-secondary'>Sign Up Here!</h1>
           <p className='text-primary pt-3 font-semibold'>
             Welcome! Please give your information and get the awesome things
             here.
           </p>
         </div>
-        <div class='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
-          <div class='card-body'>
+        <div className='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
+          <div className='card-body'>
             <h2 className='text-center text-2xl font-bold'>Sign Up </h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className='form-control w-full max-w-xs'>
@@ -173,10 +173,10 @@ const SignUp = () => {
                 </Link>
               </small>
             </p>
-            <div class='divider lg:divider-vertical '>OR</div>
+            <div className='divider lg:divider-vertical '>OR</div>
             <button
               onClick={() => signInWithGoogle()}
-              class='btn btn-secondary'
+              className='btn btn-secondary'
             >
               Continue With Google
             </button>
