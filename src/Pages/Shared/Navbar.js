@@ -32,6 +32,11 @@ const Navbar = () => {
         </li>
       )}
       <li>
+        <NavLink to='/blogs' className='rounded-lg hover:bg-secondary'>
+          Blogs
+        </NavLink>
+      </li>
+      <li>
         {user ? (
           <button className='btn btn-ghost' onClick={logout}>
             Sign Out
