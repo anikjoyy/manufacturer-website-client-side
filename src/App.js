@@ -5,6 +5,9 @@ import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
+import ManageProduct from './Pages/Dashboard/ManageProduct';
+import AddProduct from './Pages/Dashboard/AddProduct';
 import AllProduct from './Pages/Home/AllProduct';
 import Home from './Pages/Home/Home';
 import ProductDetails from './Pages/Home/ProductDetails';
@@ -14,6 +17,7 @@ import SignUp from './Pages/Login/SignUp';
 import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Navbar';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import Users from './Pages/Dashboard/Users';
 
 function App() {
   return (
@@ -45,6 +49,16 @@ function App() {
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
           <Route path='review' element={<AddReview></AddReview>}></Route>
+          <Route
+            path='allOrders'
+            element={<ManageOrders></ManageOrders>}
+          ></Route>
+          <Route path='addProduct' element={<AddProduct></AddProduct>}></Route>
+          <Route
+            path='manageProduct'
+            element={<ManageProduct></ManageProduct>}
+          ></Route>
+          <Route path='users' element={<Users></Users>}></Route>
         </Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
