@@ -9,6 +9,7 @@ import auth from '../../Firebase/firebase.init';
 import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
+import PageTitle from '../Shared/PageTitle';
 
 const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -59,6 +60,7 @@ const SignUp = () => {
         backgroundImage: `url(${signUpImage})`,
       }}
     >
+      <PageTitle title='SignUp'></PageTitle>
       <div className='hero-content flex-col lg:flex-row-reverse'>
         <div className='text-center '>
           <h1 className='text-5xl font-bold text-secondary'>Sign Up Here!</h1>

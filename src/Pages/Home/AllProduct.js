@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PageTitle from '../Shared/PageTitle';
 import Product from './Product';
 
 const AllProduct = () => {
@@ -11,6 +12,7 @@ const AllProduct = () => {
   }, []);
   return (
     <div className='mx-12 my-10'>
+      <PageTitle title='Products'></PageTitle>
       <h4 className='text-3xl text-secondary text-center font-bold  my-12'>
         All Products
       </h4>

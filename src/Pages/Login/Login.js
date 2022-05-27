@@ -10,6 +10,7 @@ import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../Shared/PageTitle';
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -58,6 +59,7 @@ const Login = () => {
         backgroundImage: `url(${regImage})`,
       }}
     >
+      <PageTitle title='Login'></PageTitle>
       <div className='hero-content flex-col lg:flex-row-reverse'>
         <div className='text-center '>
           <h1 className='text-5xl font-bold text-secondary'>Login Now!</h1>

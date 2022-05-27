@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import useProductDetails from '../../hooks/useProductDetails';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/firebase.init';
+import PageTitle from '../Shared/PageTitle';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -11,6 +12,7 @@ const ProductDetails = () => {
 
   return (
     <div className='flex flex-col w-full lg:flex-row'>
+      <PageTitle title='Details'></PageTitle>
       <div className='card lg:card-side bg-base-100 shadow-xl my-5 ms-5'>
         <figure>
           <img style={{ height: '450px' }} src={product.img} alt='Album' />
