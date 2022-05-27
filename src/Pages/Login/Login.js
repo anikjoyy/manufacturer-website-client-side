@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import regImage from '../../assets/images/registrationImage.png';
 import {
   useSignInWithEmailAndPassword,
@@ -8,11 +8,15 @@ import auth from '../../Firebase/firebase.init';
 import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
   const {
     register,
     formState: { errors },
@@ -22,6 +26,7 @@ const Login = () => {
   let signInError;
   const navigate = useNavigate();
   const location = useLocation();
+
   let from = location.state?.from?.pathname || '/';
 
   useEffect(() => {
@@ -129,6 +134,17 @@ const Login = () => {
                 </label>
               </div>
               {signInError}
+              <p>
+                <small>
+                  Forgot Password?
+                  <button
+                    className='text-error pe-auto text-decoration-none pb-2'
+                    disabled
+                  >
+                    Click here
+                  </button>
+                </small>
+              </p>
               <input
                 className='btn w-full max-w-xs text-white bg-primary hover:text-black'
                 type='submit'
@@ -153,6 +169,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
