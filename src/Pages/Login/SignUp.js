@@ -10,6 +10,7 @@ import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
 import PageTitle from '../Shared/PageTitle';
+import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -26,11 +27,12 @@ const SignUp = () => {
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
   const navigate = useNavigate();
+  const [token] = useToken(user || gUser);
 
   let signInError;
 
-  if (user || gUser) {
-    console.log(user || gUser);
+  if (token) {
+    navigate('/allProduct');
   }
 
   if (error || gError || updateError) {
@@ -50,7 +52,6 @@ const SignUp = () => {
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
-    navigate('/allProduct');
   };
 
   return (
