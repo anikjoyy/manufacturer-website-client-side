@@ -6,7 +6,7 @@ const AllProduct = () => {
   const [allProduct, setAllProduct] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/product')
+    fetch('https://arcane-sierra-72100.herokuapp.com/product')
       .then((res) => res.json())
       .then((data) => setAllProduct(data));
   }, []);
