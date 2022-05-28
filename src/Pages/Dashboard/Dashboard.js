@@ -10,37 +10,47 @@ const Dashboard = () => {
   const [admin] = useAdmin(user);
 
   return (
-    <div class='drawer drawer-mobile'>
+    <div className='drawer drawer-mobile'>
       <PageTitle title='Dashboard'></PageTitle>
-      <input id='dashboard-sidebar' type='checkbox' class='drawer-toggle' />
-      <div class='drawer-content'>
+      <input id='dashboard-sidebar' type='checkbox' className='drawer-toggle' />
+      <div className='drawer-content'>
         <h2 className=' text-center text-2xl font-bold text-primary'>
           Welcome to your Dashboard
         </h2>
         <Outlet></Outlet>
       </div>
-      <div class='drawer-side'>
-        <label for='dashboard-sidebar' class='drawer-overlay'></label>
-        <ul class='menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content'>
+      <div className='drawer-side'>
+        <label htmlFor='dashboard-sidebar' className='drawer-overlay'></label>
+        <ul className='menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content'>
           {/* <!-- Sidebar content here --> */}
-          <li>
-            <Link to='/dashboard'>My Orders</Link>
-          </li>
+          {!admin && (
+            <li>
+              <Link to='/dashboard'>My Orders</Link>
+            </li>
+          )}
           <li>
             <Link to='/dashboard/profile'>My Profile</Link>
           </li>
-          <li>
-            <Link to='/dashboard/review'>My Review</Link>
-          </li>
-          <li>
-            <Link to='/dashboard/allOrders'>Manage All Orders</Link>
-          </li>
-          <li>
-            <Link to='/dashboard/addProduct'>Add a Product</Link>
-          </li>
-          <li>
-            <Link to='/dashboard/manageProduct'>Manage Product</Link>
-          </li>
+          {!admin && (
+            <li>
+              <Link to='/dashboard/review'>My Review</Link>
+            </li>
+          )}
+          {admin && (
+            <li>
+              <Link to='/dashboard/allOrders'>Manage All Orders</Link>
+            </li>
+          )}
+          {admin && (
+            <li>
+              <Link to='/dashboard/addProduct'>Add a Product</Link>
+            </li>
+          )}
+          {admin && (
+            <li>
+              <Link to='/dashboard/manageProduct'>Manage Products</Link>
+            </li>
+          )}
           {admin && (
             <li>
               <Link to='/dashboard/users'>All Users</Link>

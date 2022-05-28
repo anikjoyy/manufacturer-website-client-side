@@ -3,10 +3,10 @@ import PageTitle from '../Shared/PageTitle';
 
 const Blogs = () => {
   return (
-    <div class='flex flex-col w-full my-5'>
+    <div className='flex flex-col w-full my-5'>
       <PageTitle title='Blogs'></PageTitle>
-      <div class='divider'>Question-01</div>
-      <div class='grid card px-12 rounded-box place-items-center'>
+      <div className='divider'>Question-01</div>
+      <div className='grid card px-12 rounded-box place-items-center'>
         <h2 className='text-2xl fw-bold'>
           Q1: How will you improve the performance of a React Application?
         </h2>
@@ -22,8 +22,8 @@ const Blogs = () => {
           <br />
         </p>
       </div>
-      <div class='divider'>Question-02</div>
-      <div class='grid px-12 card rounded-box place-items-center'>
+      <div className='divider'>Question-02</div>
+      <div className='grid px-12 card rounded-box place-items-center'>
         <h2 className='text-2xl fw-bold'>
           Q2: What are the different ways to manage a state in a React
           application?
@@ -36,8 +36,8 @@ const Blogs = () => {
           4. URL State. <br />
         </p>
       </div>
-      <div class='divider'>Question-03</div>
-      <div class='grid px-12 card rounded-box place-items-center'>
+      <div className='divider'>Question-03</div>
+      <div className='grid px-12 card rounded-box place-items-center'>
         <h2 className='text-2xl fw-bold'>
           Q3: How does prototypical inheritance work?
         </h2>
@@ -51,8 +51,8 @@ const Blogs = () => {
           Object.setPrototypeOf.
         </p>
       </div>
-      <div class='divider'>Question-04</div>
-      <div class='grid px-12 card rounded-box place-items-center'>
+      <div className='divider'>Question-04</div>
+      <div className='grid px-12 card rounded-box place-items-center'>
         <h2 className='text-2xl fw-bold'>
           Q4: Why you do not set the state directly in React. For example, if
           you have `const [products, setProducts] = useState([])`. Why you do
@@ -67,8 +67,8 @@ const Blogs = () => {
           closures are not affected, but new ones are created.
         </p>
       </div>
-      <div class='divider'>Question-05</div>
-      <div class='grid px-12 card rounded-box place-items-center'>
+      <div className='divider'>Question-05</div>
+      <div className='grid px-12 card rounded-box place-items-center'>
         <h2 className='text-2xl fw-bold'>
           Q5: You have an array of products. Each object has a name, price,
           description, etc. How will you implement a search to find products by
@@ -81,8 +81,8 @@ const Blogs = () => {
           product then we have to use filter.
         </p>
       </div>
-      <div class='divider'>Question-06</div>
-      <div class='grid px-12 card rounded-box place-items-center'>
+      <div className='divider'>Question-06</div>
+      <div className='grid px-12 card rounded-box place-items-center'>
         <h2 className='text-2xl fw-bold'>
           Q6: What is a unit test? Why should write unit tests?
         </h2>
@@ -93,7 +93,7 @@ const Blogs = () => {
           that piece of code
         </p>
       </div>
-      <div class='divider'>The End</div>
+      <div className='divider'>The End</div>
     </div>
   );
 };

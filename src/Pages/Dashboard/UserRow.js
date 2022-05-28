@@ -28,7 +28,7 @@ const UserRow = ({ user }) => {
       <td>{email}</td>
       <td>
         {role !== 'admin' && (
-          <button onClick={makeAdmin} class='btn btn-xs btn-primary'>
+          <button onClick={makeAdmin} className='btn btn-xs btn-primary'>
             Make Admin
           </button>
         )}
