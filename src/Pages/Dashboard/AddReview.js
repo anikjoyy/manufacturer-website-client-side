@@ -15,7 +15,7 @@ const AddReview = () => {
       review: data.review,
       ratings: data.ratings,
     };
-    const url = 'http://localhost:5000/review';
+    const url = 'https://arcane-sierra-72100.herokuapp.com/review';
     fetch(url, {
       method: 'POST',
       headers: {

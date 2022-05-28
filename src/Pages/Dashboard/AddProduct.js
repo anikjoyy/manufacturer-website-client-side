@@ -35,7 +35,7 @@ const AddProduct = () => {
             supName: data.supName,
           };
           // send to your database
-          fetch('http://localhost:5000/product', {
+          fetch('https://arcane-sierra-72100.herokuapp.com/product', {
             method: 'POST',
             headers: {
               'content-type': 'application/json',
