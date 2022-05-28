@@ -14,7 +14,7 @@ const Dashboard = () => {
       <PageTitle title='Dashboard'></PageTitle>
       <input id='dashboard-sidebar' type='checkbox' className='drawer-toggle' />
       <div className='drawer-content'>
-        <h2 className=' text-center text-2xl font-bold text-primary'>
+        <h2 className=' text-center text-2xl font-bold text-primary my-2'>
           Welcome to your Dashboard
         </h2>
         <Outlet></Outlet>

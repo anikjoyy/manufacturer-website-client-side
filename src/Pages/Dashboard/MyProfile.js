@@ -7,6 +7,9 @@ const MyProfile = () => {
   return (
     <div class='hero min-h-[70vh]'>
       <div class='card w-full max-w-sm shadow-2xl bg-base-100'>
+        <h2 className='text-2xl text-center mt-4 text-secondary font-bold'>
+          My Profile
+        </h2>
         <div class='card-body'>
           <div class='form-control'>
             <label class='label'>
