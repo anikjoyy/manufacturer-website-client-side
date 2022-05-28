@@ -37,6 +37,11 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
+        <NavLink to='/myPortfolio' className='rounded-lg hover:bg-secondary'>
+          My Portfolio
+        </NavLink>
+      </li>
+      <li>
         {user ? (
           <button className='btn btn-ghost' onClick={logout}>
             Sign Out
