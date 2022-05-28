@@ -6,7 +6,7 @@ const MyProfile = () => {
   const [user, loading, error] = useAuthState(auth);
   return (
     <div class='hero min-h-[70vh]'>
-      <div class='card  w-full max-w-sm shadow-2xl bg-base-100'>
+      <div class='card w-full max-w-sm shadow-2xl bg-base-100'>
         <div class='card-body'>
           <div class='form-control'>
             <label class='label'>
