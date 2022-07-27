@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Product from './Product';
+import Loading from '../Shared/Loading';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch('https://arcane-sierra-72100.herokuapp.com/product')
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        setProducts(data);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
@@ -20,6 +26,7 @@ const Products = () => {
         {products.slice(-6).map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}
+        {isLoading ? <Loading></Loading> : Products}
         <div>
           <Link to='/allProduct'>
             <button className='btn btn-secondary'>See All</button>
