@@ -4,6 +4,11 @@ This is an manufacturer website. Where there are two sides of this website one i
 
 Visit Site: [Live Site Link](https://car-whisperer-450a5.web.app/)
 
+## Admin Credentials
+
+- Email: heba@mailinator.com
+- Password: 123456
+
 ## Available Features
 
 - Sign Up and Login
