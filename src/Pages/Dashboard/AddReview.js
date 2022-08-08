@@ -32,7 +32,7 @@ const AddReview = () => {
       customerFeedback: feedback,
     };
 
-    const url = `http://localhost:5000/review${id}`;
+    const url = `https://arcane-sierra-72100.herokuapp.com/review${id}`;
     fetch(url, {
       method: 'POST',
       headers: {

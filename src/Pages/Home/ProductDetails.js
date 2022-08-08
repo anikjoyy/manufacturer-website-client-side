@@ -45,7 +45,7 @@ const ProductDetails = () => {
       price,
     };
 
-    fetch('http://localhost:5000/order', {
+    fetch('https://arcane-sierra-72100.herokuapp.com/order', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
