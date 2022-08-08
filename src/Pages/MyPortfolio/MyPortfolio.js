@@ -8,14 +8,14 @@ const MyPortfolio = () => {
         My Information
       </h2>
       <div className='min-h-[40vh] flex justify-center items-center'>
-        <div class='card w-96 bg-accent shadow-xl'>
-          <div class='avatar flex justify-center items-center pt-3'>
-            <div class='w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2'>
+        <div className='card w-96 bg-accent shadow-xl'>
+          <div className='avatar flex justify-center items-center pt-3'>
+            <div className='w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2'>
               <img src={myImage} alt='' />
             </div>
           </div>
-          <div class='card-body'>
-            <h2 class='text-2xl text-center font-bold'>Anik Das</h2>
+          <div className='card-body'>
+            <h2 className='text-2xl text-center font-bold'>Anik Das</h2>
             <p>
               Email Address:{' '}
               <span className='font-semibold'>anikjoy.cse@gmail.com</span>
